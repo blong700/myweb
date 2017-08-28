@@ -81,6 +81,39 @@
 							</dd>
 						</dl>
 					</div>
+					<div id="cate_item3" class="cate_part" data-id="3" style="display: none;">
+						<dl>
+							<dt>
+								<a href="#">移动端</a>
+							</dt>
+							<dd>
+								<a href="#">Android</a>
+								<a href="#">ios</a>
+							</dd>
+						</dl>
+					</div>
+					<div id="cate_item4" class="cate_part" data-id="4" style="display: none;">
+						<dl>
+							<dt>
+								<a href="#">数据库</a>
+							</dt>
+							<dd>
+								<a href="#">mysql</a>
+								<a href="#">Sqlserver</a>
+								<a href="#">Oracle</a>
+							</dd>
+						</dl>
+					</div>
+					<div id="cate_item5" class="cate_part" data-id="5" style="display: none;">
+						<dl>
+							<dt>
+								<a href="#">人工智能</a>
+							</dt>
+							<dd>
+								<a href="#">机器学习</a>
+							</dd>
+						</dl>
+					</div>
 				</div>
 			</div>
 			<div class="fs_col2">
@@ -140,6 +173,9 @@
 <script>
 //滚动图
 jQuery(".slider_main").slide({ mainCell:".bd ul",effect:"leftLoop",vis:1,scroll:1,autoPlay:true});
+//信息的margin修改
+$(".info-m .info:nth-child(3)").css("margin-right","0");
+$(".info-m .info:nth-child(6)").css("margin-right","0");
 jQuery(document).ready(function($) {
 
 $(".cate_menu_item").mouseover(function(){
@@ -168,8 +204,7 @@ $(".nav li").bind("click",function(event){
 	//$(event.target).addClass("active").siblings().removeClass("active");
 	$(this).addClass("active").siblings().removeClass("active");
 });
-$(".info-m .info:nth-child(3)").css("margin-right","0");
-$(".info-m .info:nth-child(6)").css("margin-right","0");
+
 })
 </script>
 </body>
