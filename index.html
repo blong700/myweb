@@ -124,9 +124,9 @@
 					</div>
 					<div class="bd">
 						<ul>
-							<li><a href="#"><img src="images/1.jpg"/></a></li>
-							<li><a href="#"><img src="images/2.jpg"/></a></li>
-							<li><a href="#"><img src="images/3.jpg"/></a></li>
+							<li><a href="#"><img src="images/php.jpg"/></a></li>
+							<li><a href="#"><img src="images/java.jpg"/></a></li>
+							<li><a href="#"><img src="images/python.jpg"/></a></li>
 						</ul>
 					</div>
 				</div>
@@ -134,29 +134,59 @@
 		</section>
 		<section>
 			<div class="info-m">
-				<div class="info">
-					<h3>html</h3>
-					<p>&nbsp &nbsp &nbsp超级文本标记语言（英文缩写：HTML）是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言。</p>
+				<div class="info photo-front">
+					<div class="side side-front">
+						<h3>html</h3>
+						<img src="images/html.jpg"/>
+					</div>
+					<div class="side side-back">
+						<p>&nbsp &nbsp &nbsp超级文本标记语言（英文缩写：HTML）是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言。</p>
+					</div>
 				</div>
-				<div class="info">
-					<h3>css</h3>
-					<p>&nbsp &nbsp &nbsp层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。[</p>
+				<div class="info photo-front">
+					<div class="side side-front">
+						<h3>css</h3>
+						<img src="images/css.jpg"/>
+					</div>
+					<div class="side side-back">
+						<p>&nbsp &nbsp &nbsp层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。</p>
+					</div>
 				</div>
-				<div class="info index-3">
-					<h3>javascript</h3>
-					<p>&nbsp &nbsp &nbsp JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。</p>
+				<div class="info index-3 photo-front">
+					<div class="side side-front">
+						<h3>javascript</h3>
+						<img src="images/javascript.jpg"/>
+					</div>
+					<div class="side side-back">
+						<p>&nbsp &nbsp &nbsp JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。</p>
+					</div>
 				</div>
-				<div class="info">
-					<h3>php</h3>
-					<p>&nbsp &nbsp &nbsp PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页</p>
+				<div class="info photo-front">
+					<div class="side side-front">
+						<h3>php</h3>
+						<img src="images/php.jpg"/>
+					</div>
+					<div class="side side-back">
+						<p>&nbsp &nbsp &nbsp PHP是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。</p>
+					</div>
 				</div>
-				<div class="info">
-					<h3>java</h3>
-					<p>&nbsp &nbsp &nbsp Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征</p>
+				<div class="info photo-front">
+					<div class="side side-front">
+						<h3>java</h3>
+						<img src="images/java.jpg"/>
+					</div>
+					<div class="side side-back">
+						<p>&nbsp &nbsp &nbsp Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。</p>
+					</div>
 				</div>
-				<div class="info index-6">
-					<h3>python</h3>
-					<p>&nbsp &nbsp &nbsp Python是纯粹的自由软件， 源代码和解释器CPython遵循 GPL(GNU General Public License)协议[2]  。Python语法简洁清晰，特色之一是强制用空白符(white space)作为语句缩进。</p>
+				<div class="info index-6 photo-front">
+					<div class="side side-front">
+						<h3>python</h3>
+						<img src="images/python.jpg"/>
+					</div>
+					<div class="side side-back">
+						<p>&nbsp &nbsp &nbsp Python是纯粹的自由软件， 源代码和解释器CPython遵循 GPL(GNU General Public License)协议[2]  。Python语法简洁清晰，特色之一是强制用空白符(white space)作为语句缩进。</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -203,6 +233,17 @@ $(".cate_menu_item").mouseout(function(){
 $(".nav li").bind("click",function(event){
 	//$(event.target).addClass("active").siblings().removeClass("active");
 	$(this).addClass("active").siblings().removeClass("active");
+});
+
+$(".info").bind("click",function(){
+	var cls=$(this).attr("className");
+	if(/photo-front/.test(cls)){
+		$(this).removeClass("photo-front");
+		$(this).addClass("photo-back");
+	}else{
+		$(this).removeClass("photo-back");
+		$(this).addClass("photo-front");
+	}
 });
 
 })
